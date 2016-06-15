@@ -9,7 +9,10 @@ ENTRYPOINT ["./setup.sh"]
 ADD setup.sh /root/setup.sh
 ADD push_flag_into_servermem.sh /root/push_flag_into_servermem.sh
 RUN chmod u+x /root/*.sh
+ADD index.html /var/www/index.html
 ADD login.php /var/www/login.php
+RUN mkdir /var/www/pics
+ADD pics/ssl.png /var/www/pics/ssl.png
 
 RUN echo "deb http://de.archive.ubuntu.com/ubuntu precise main restricted universe multiverse" >> /etc/apt/sources.list
 RUN echo "#deb-src http://de.archive.ubuntu.com/ubuntu precise main restricted universe multiverse" >> /etc/apt/sources.list
