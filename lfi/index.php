@@ -17,7 +17,7 @@ if(isset($_GET['page'])){
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
 	<div class="container">
-	  <span class="brand"><a href="/">Web Security Workshop</a></span>
+	  <span class="brand"><a href="/">AST-CTF</a></span>
 	</div>
       </div>
     </div>
