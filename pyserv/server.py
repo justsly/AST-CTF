@@ -21,8 +21,6 @@ while True:
     while 1:
         data = conn.recv(1024)
 
-        print('Connecting: %s, %s' %(addr, data))
-
         if not data or data[:4] != MAGIC_BYTE:
             break
 
@@ -32,7 +30,10 @@ while True:
 
             fhandle = open(filename_enc, 'r')
             conn.sendall(fhandle.read())
-        except:
+        except socket.error, exc:
+            # pass on connection error
             pass
+        except IOError:
+            conn.send('file not found\n')
 
     conn.close()
