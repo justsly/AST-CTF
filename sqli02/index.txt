@@ -1,0 +1,5 @@
+$sql = <<<SQL
+SELECT inhalt
+FROM posts
+WHERE id = '$id'
+SQL;

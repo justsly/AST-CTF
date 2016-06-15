@@ -1,0 +1,5 @@
+$sql = <<<SQL
+SELECT userid, user
+FROM users
+WHERE user =?  and password = md5(?)
+SQL;
