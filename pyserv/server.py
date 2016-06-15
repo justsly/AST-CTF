@@ -18,6 +18,8 @@ def strong_crypto(s):
 while True:
     conn, addr = s.accept()
 
+    conn.send('Connected to encrypted FileReader. Secure since 44 BC.\n')
+
     while 1:
         data = conn.recv(1024)
 
