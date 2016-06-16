@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" class="no-js" class="remodal-is-locked">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='sans' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>AST-CTF</title>
+
+	<!-- remodal popup ui -->
+	<script src="src/jquery-1.12.1.min.js"></script>
+
+	<!-- Load local lib and tests -->
+	<link rel="stylesheet" href="src/remodal.css">
+	<link rel="stylesheet" href="src/remodal-default-theme.css">
+	<script src="src/remodal.js"></script>
+	<style>
+		.remodal-overlay.without-animation.remodal-is-opening,
+		.remodal-overlay.without-animation.remodal-is-closing,
+		.remodal.without-animation.remodal-is-opening,
+		.remodal.without-animation.remodal-is-closing,
+		.remodal-bg.without-animation.remodal-is-opening,
+		.remodal-bg.without-animation.remodal-is-closing {
+			animation: none;
+		}
+	</style>
+
+</head>
+<body>
+	<header class="cd-header">
+		<h1>AST-CTF</h1>
+	</header>
+
+
+	<span class="cd-pricing-container cd-full-width cd-secondary-theme">
+		<ul class="cd-pricing-list">
+			<li>
+				<header class="cd-pricing-header">
+					<h2 id="ast_1">Secure Framework</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">100</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#" data-remodal-target="ast_1">Info</a>
+				</footer> <!-- .cd-pricing-footer -->
+			</li>
+			<li class="cd-popular">
+				<header class="cd-pricing-header">
+					<h2 id="ast_2">Zero Impact Security</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">200</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#" data-remodal-target="ast_2">Info</a>
+				</footer> <!-- .cd-pricing-footer -->
+			</li>
+			<li>
+				<header class="cd-pricing-header">
+					<h2 id="ast_3">Catch me if you can</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">200</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#"  data-remodal-target="ast_3">Info</a>
+				</footer> <!-- .cd-pricing-footer -->
+			</li>
+		</ul> <!-- .cd-pricing-list -->
+
+	</span> <!-- .cd-pricing-container -->
+	<span class="cd-pricing-container cd-full-width cd-secondary-theme">
+		<ul class="cd-pricing-list">
+			<li class="cd-popular">
+				<header class="cd-pricing-header">
+					<h2 id="ast_4">Simple Login</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">100</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<div class="remodal-bg">
+					<div id="qunit"></div>
+					<a class="cd-select" href="#" data-remodal-target="ast_4">Info</a>
+				</div>
+				</footer>  <!-- .cd-pricing-footer -->
+			</li>
+			<li>
+				<header class="cd-pricing-header">
+					<h2 id="ast_5">Image Hub</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">200</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#" data-remodal-target="ast_5">Info</a>
+				</footer> <!-- .cd-pricing-footer -->
+			</li>
+			<li class="cd-popular">
+				<header class="cd-pricing-header">
+					<h2 id="ast_6">20th Century Filereader </h2>
+
+					<div class="cd-price">
+						<span class="cd-value">200</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#" data-remodal-target="ast_6">Info</a>
+				</footer>  <!-- .cd-pricing-footer -->
+			</li>
+		</ul> <!-- .cd-pricing-list -->
+
+	</span> <!-- .cd-pricing-container -->
+	<span class="cd-pricing-container cd-full-width cd-secondary-theme">
+		<ul class="cd-pricing-list">
+			<li>
+				<header class="cd-pricing-header">
+					<h2 id="ast_7">Tables of Facepalm</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">150</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#"  data-remodal-target="ast_7">Info</a>
+				</footer> <!-- .cd-pricing-footer -->
+			</li>
+			<li class="cd-popular">
+				<header class="cd-pricing-header">
+					<h2 id="ast_8">H4x0r Chatwall</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">200</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#" data-remodal-target="ast_8">Info</a>
+				</footer> <!-- .cd-pricing-footer -->
+			</li>
+			<li>
+				<header class="cd-pricing-header">
+					<h2 id="ast_9">Pingcommander</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">150</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#" data-remodal-target="ast_9">Info</a>
+				</footer> <!-- .cd-pricing-footer -->
+			</li>
+		</ul> <!-- .cd-pricing-list -->
+
+	</span> <!-- .cd-pricing-container -->
+	<span class="cd-pricing-container cd-full-width cd-secondary-theme">
+		<ul class="cd-pricing-list">
+			<li>
+			</li>
+			<li>
+				<header class="cd-pricing-header">
+					<h2 id="ast_10">Blind Date</h2>
+
+					<div class="cd-price">
+						<span class="cd-value">200</span>
+						<span class="cd-duration">pts</span>
+					</div>
+				</header> <!-- .cd-pricing-header -->
+
+				<footer class="cd-pricing-footer">
+					<a class="cd-select" href="#"  data-remodal-target="ast_10">Info</a>
+				</footer> <!-- .cd-pricing-footer -->
+			</li>
+			<li>
+			</li>
+		</ul> <!-- .cd-pricing-list -->
+
+	</span <!-- .cd-pricing-container -->
+
+	<div class="remodal" data-remodal-id="ast_1">
+	  <a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_1').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;fonz-size:300%;">
+				Wir wüssten gerne welche Nutzer auf dem System angelegt sind.<br>
+				Dadurch könnten wir unseren Bruteforce Angriff deutlich einschränken.<br>
+				Kannst du das in Erfahrung bringen?
+			</div>
+		</div>
+	  <a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+	  <a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="location.href='http://192.168.3.51/'">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_2">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_2').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Diese Typen prahlen damit, dass sie zu 100% sicher seien.<br>
+				Wir würden gerne das Gegenteil beweisen. Kannst du dich darum kümmern?
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="ast_link('https://192.168.3.53/')">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_3">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_3').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Irgendetwas stimmt mit diesem Javascript nicht.<br>
+				Aber wir können uns leider keinen Reim darauf machen.<br>
+				Bist du immun gegen diese Form der Verwirrung?
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="ast_link('http://192.168.3.54/')">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_4">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_4').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Das siht nach einem ganz simplen Loginformular aus.<br>
+				Wir kennen uns selbst mit solchen Dinge nicht wirklich aus,<br>
+				für einen Profi wie dich ist es aber sicherlich kein Problem dies zu umgehen.
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="ast_link('http://192.168.3.52/')">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_5">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_5').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Immer nur Bilder hochladen finden wir ätzend.<br>
+				Kann man da nicht noch mehr machen?<br>
+				Irgendwas cooles vielleicht?
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="ast_link('http://192.168.3.55/')">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_6">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_6').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Angeblich soll dieser Service für irgendetwas gut sein.<br>
+				Mittels <span style="font-weight: bold;">netcat</span> kann der Dienst unter <span style="font-weight: bold;">192.168.3.56:5555</span> aufgerufen werden.<br>
+				Doch wir fliegen ständig raus und wissen nicht warum. Kannst du helfen?
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_7">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_7').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Uns wurde gemeldet, dass es manchmal zu seltsamen Fehlermeldungen kommen soll.<br>
+				Wir konnten das aber leider nicht nachstellen und sehen daher kein Problem darin.<br>
+				Wie ist deine Meinung dazu? Sollten wir uns sorgen machen?
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="ast_link('http://192.168.3.52:8080/')">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_8">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_8').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Der Admin dieser Seite scheint sehr viel Freizeit zu haben.<br>
+				Egal zu welcher Zeit man auf seine Chatwall schreibt kommt innerhalb von einer Minute eine Antwort.<br>
+				Mir geht dieser Typ ziemlich auf den Keks... Kannst du ihm das irgendwie klarmachen?
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="ast_link('http://192.168.3.57/')">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_9">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_9').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Ein merkwürdiges System um andere Rechner zu pingen.<br>
+				Sinnvoll erscheint mir die Sache sowieso nicht, aber ist es sicher?
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="ast_link('http://192.168.3.58/')">OK</a>
+	</div>
+
+	<div class="remodal" data-remodal-id="ast_10">
+		<a data-remodal-action="close" class="remodal-close"></a>
+		<div>
+			<div style="font-weight: bold; margin-bottom: 15px;"><script>document.write(document.getElementById('ast_10').innerHTML)</script></div>
+			<div style="margin-bottom: 25px;">
+				Irgend so ein Hacker hatte uns zu dieser Seite etwas von blindem ausprobieren erzählt.<br>
+				Wir können uns darauf auch keinen Reim machen, da wir unseren Code immer von Professionellen Codern auf Stackoverflow kopieren.
+			</div>
+		</div>
+		<a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+		<a data-remodal-action="confirm" class="remodal-confirm" href="#" onclick="ast_link('http://192.168.3.52:8088/')">OK</a>
+	</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+	function ast_link(ast) {
+		window.open(
+  		ast,
+  		'_blank'
+		);
+	}
+</script>
+</body>
+</html>
