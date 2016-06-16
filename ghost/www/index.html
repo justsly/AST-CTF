@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<pre>
+    ___   ___________   ____  _____  __   __________________
+   /   | / ___/_  __/  / __ \/   \ \/ /  / ____/_  __/ ____/
+  / /| | \__ \ / /    / / / / /| |\  /  / /     / / / /_    
+ / ___ |___/ // /    / /_/ / ___ |/ /  / /___  / / / __/    
+/_/  |_/____//_/    /_____/_/  |_/_/   \____/ /_/ /_/       
+
+There is nothing to see here... <span id="h"></span>
+</pre>
+
+<input type="text" name="password" id="password" placeholder="Insert password here"><button type="button" onclick="validate()">Login</button>
+
+<script>
+function validate(){var e=document.getElementById("password").value,r=window.location.hash.substring(1),n=r.replace(/[a-zA-Z]/g,function(e){return String.fromCharCode(("Z">=e?90:122)>=(e=e.charCodeAt(0)+13)?e:e-26)});e==n&&(window.location.href="/"+e+"/"+r+"/"+n.split("").reverse().join("")+"/")}!function(){for(var e=document.getElementById("h"),r=String.fromCharCode,n=[r(97,110,100,104,101,114,101),r(111,114,104,101,114,101),r(111,114,111,114,104,101,114,101)],o=0;o<n.length;o++){var t=n[o];e.innerHTML+="<a href='#"+t+"'>or here</a>... "}}();
+</script>	
+
+</body>
+</html>

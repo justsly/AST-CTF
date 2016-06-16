@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<pre>
+    ___   ___________   ____  _____  __   __________________
+   /   | / ___/_  __/  / __ \/   \ \/ /  / ____/_  __/ ____/
+  / /| | \__ \ / /    / / / / /| |\  /  / /     / / / /_    
+ / ___ |___/ // /    / /_/ / ___ |/ /  / /___  / / / __/    
+/_/  |_/____//_/    /_____/_/  |_/_/   \____/ /_/ /_/       
+
+There is nothing to see here... <span id="h"></span>
+</pre>
+
+<input type="text" name="password" id="password" placeholder="Insert password here"><button type="button" onclick="validate()">Login</button>
+
+<script>
+	function validate() {
+		var v = document.getElementById('password').value;
+		var h = window.location.hash.substring(1);
+		var r13 = h.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+
+		if(v==r13) { window.location.href = '/' + v + '/' + h + '/' + r13.split('').reverse().join('') + '/'; }
+	}	
+
+	(function() {
+		var thediv = document.getElementById('h');
+		var s = String.fromCharCode;
+		var elements = [s(97, 110, 100, 104, 101, 114, 101), s(111, 114, 104, 101, 114, 101), s(111, 114, 111, 114, 104, 101, 114, 101)]; 
+
+		for(var i=0;i<elements.length;i++) {
+			var element = elements[i];
+			thediv.innerHTML += "<a href='#" + element + "'>or here</a>... ";	
+		}
+	})();
+</script>	
+
+</body>
+</html>
