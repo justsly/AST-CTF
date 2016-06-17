@@ -109,7 +109,7 @@ Main Components
     clear: both;
   }
   .cd-pricing-list > li {
-    width: 33.3333333333%;
+    width: 20%;
     float: left;
   }
   .cd-pricing-list > li::before {
