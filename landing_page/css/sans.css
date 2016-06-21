@@ -2,17 +2,17 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(css/OpenSans-Light.woff) format('woff');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(OpenSans-Light.woff) format('woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(css/OpenSans.woff) format('woff');
+  src: local('Open Sans'), local('OpenSans'), url(OpenSans.woff) format('woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(css/OpenSans-Bold.woff) format('woff');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(OpenSans-Bold.woff) format('woff');
 }
