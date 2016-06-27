@@ -8,10 +8,10 @@ WORKDIR /root
 RUN mkdir /var/ftp
 RUN mkdir -p /var/run/vsftpd/empty
 
-ADD server.py /var/ftp
-ADD proof.txt /var/ftp
-ADD README /var/ftp
-ADD bootstrap.sh /root
+ADD server.py /var/ftp/
+ADD proof.txt /var/ftp/
+ADD README /var/ftp/
+ADD bootstrap.sh /root/
 ADD vsftpd-anon.conf /etc/vsftpd/
 
 RUN chown root /var/ftp/proof.txt
