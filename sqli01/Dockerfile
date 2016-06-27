@@ -13,9 +13,9 @@ RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y apache2 php5 curl mysql-server php5-mysql
 
 # Add Level Files to Container
-RUN mkdir /var/www/html/css
-RUN mkdir /var/www/html/jquery
-ADD css/style.css /var/www/html/css
+RUN mkdir -p /var/www/html/css
+RUN mkdir -p /var/www/html/jquery
+ADD css/style.css /var/www/html/css/
 ADD jquery/jquery-1.12.1.min.js /var/www/html/jquery/jquery-1.12.1.min.js
 ADD sql_statement.txt /var/www/html/sql_statement.txt
 ADD setup.sh /root/setup.sh
